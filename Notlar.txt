@@ -1,0 +1,10 @@
+Concrete : Somut dosyalar
+Abstract : Soyut dosyalar (interface )
+
+
+
+add-migration [migrasinIsmi]
+update-database
+
+
+Fluen Validation
