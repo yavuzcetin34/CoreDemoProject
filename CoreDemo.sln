@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreLayer", "CoreLayer\CoreLayer.csproj", "{9E932766-C2D4-44AB-87FA-C83A5BD3DCA2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dosyalar", "Dosyalar", "{CF42F81A-CB7D-4641-A1F1-F85A2F268541}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dosyalar", "Dosyalar", "{51835929-4855-4E9D-A94A-9949CBA1BE95}"
 	ProjectSection(SolutionItems) = preProject
-		Notlar.txt = Notlar.txt
+		Dosyalar\CoreBlogTema.zip = Dosyalar\CoreBlogTema.zip
+		Dosyalar\Notlar.txt = Dosyalar\Notlar.txt
+		Dosyalar\writer.rar = Dosyalar\writer.rar
 	EndProjectSection
 EndProject
 Global
