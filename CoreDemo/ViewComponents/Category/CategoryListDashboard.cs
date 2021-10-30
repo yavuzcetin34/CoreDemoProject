@@ -4,15 +4,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CoreDemo.ViewComponents.Category
 {
-    public class CategoryList : ViewComponent
+    public class CategoryListDashboard : ViewComponent
     {
         readonly CategoryManager cm = new(new EfCategoryRepository());
 
-        public  IViewComponentResult Invoke()
+        public IViewComponentResult Invoke()
         {
             var values = cm.GetAll();
-            return View(values);    
+            return View(values);
         }
-
     }
 }

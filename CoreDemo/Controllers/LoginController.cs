@@ -15,6 +15,7 @@ namespace CoreDemo.Controllers
     [AllowAnonymous]
     public class LoginController : Controller
     {
+
         public IActionResult Index()
         {
             return View();
@@ -46,7 +47,6 @@ namespace CoreDemo.Controllers
             {
                 return View();
             }
-            return View();
         }
     }
 }

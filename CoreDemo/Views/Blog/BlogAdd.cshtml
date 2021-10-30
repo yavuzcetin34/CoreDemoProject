@@ -1,0 +1,37 @@
+﻿@model EntityLayer.Concrete.Blog
+
+
+@{
+	ViewData["Title"] = "BlogAdd";
+	Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>Yeni Blog Girişi</h1>
+<br />
+@using (Html.BeginForm("BlogAdd", "Blog", FormMethod.Post))
+{
+	@Html.Label("Blog Başlığı")
+	@Html.TextBoxFor(t=> t.BlogTitle, new {@class="form-control"})
+	@Html.ValidationMessageFor(t=> t.BlogTitle)
+
+	<br />
+	@Html.Label("Blog Görseli")
+	@Html.TextBoxFor(t=> t.BlogImage, new {@class="form-control"})
+	@Html.ValidationMessageFor(t=> t.BlogImage)
+
+	<br />
+	@Html.Label("Blog Küçük Görsel")
+	@Html.TextBoxFor(t=> t.BlogThumbnailImage, new {@class="form-control"})
+
+	<br />
+	@Html.Label("Kategori")
+	@Html.DropDownListFor(t=> t.CategoryId, (List<SelectListItem>)ViewBag.cv,new { @class="form-control"})
+
+	<br />
+	@Html.Label("Blog İçeriği")
+	@Html.TextAreaFor(t=> t.BlogContent,15,3, new {@class="form-control"})
+	@Html.ValidationMessageFor(t=> t.BlogContent)
+
+	<br />
+	<button class="btn btn-info">Yazıyı Kaydet</button>
+}

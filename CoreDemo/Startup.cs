@@ -40,12 +40,12 @@ namespace CoreDemo
             });
 
             services.AddMvc();
-            services.AddAuthentication(
-                CookieAuthenticationDefaults.AuthenticationScheme)
-                .AddCookie(t =>
-                {
-                    t.LoginPath = "/Login/Index";
-                });
+            //services.AddAuthentication(
+            //    CookieAuthenticationDefaults.AuthenticationScheme)
+            //    .AddCookie(t =>
+            //    {
+            //        t.LoginPath = "/Login/Index";
+            //    });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
